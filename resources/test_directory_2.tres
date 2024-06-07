@@ -7,6 +7,7 @@
 [resource]
 script = ExtResource("3_xrg61")
 directory_content = Array[Resource("res://scripts/system_descriptions/system_element_description.gd")]([ExtResource("1_41lna"), ExtResource("1_0sm6q")])
+is_root = false
 guid = ""
 name = "Directory 2"
 element_type = 2

@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://sxgl4pw20jg"]
+[gd_scene load_steps=6 format=3 uid="uid://sxgl4pw20jg"]
 
 [ext_resource type="Script" path="res://scripts/network_generator.gd" id="1_q5jum"]
 [ext_resource type="Resource" uid="uid://b6inrjsjcfyj5" path="res://resources/test_network.tres" id="2_2f8rs"]
+[ext_resource type="Script" path="res://scripts/system_element_generator.gd" id="3_ijahl"]
+[ext_resource type="Texture2D" uid="uid://152iing3563v" path="res://assets/Lucid V1.2/SVG/Shadow/Folder.svg" id="4_2sx48"]
+[ext_resource type="Texture2D" uid="uid://dayrq7f8oeha4" path="res://assets/Lucid V1.2/SVG/Shadow/File-Text.svg" id="5_vnvig"]
 
 [node name="MainScene" type="Node2D"]
 
@@ -21,8 +24,18 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 20
+columns = 4
 
-[node name="NetworkGenerator" type="Node" parent="." node_paths=PackedStringArray("grid_container")]
+[node name="SystemElementGenerator" type="Node" parent="." node_paths=PackedStringArray("grid_container")]
+script = ExtResource("3_ijahl")
+grid_container = NodePath("../MainCanvasLayer/GridContainer")
+elements_icons = {
+2: ExtResource("4_2sx48"),
+3: ExtResource("5_vnvig")
+}
+
+[node name="NetworkGenerator" type="Node" parent="." node_paths=PackedStringArray("grid_container", "system_element_generator")]
 script = ExtResource("1_q5jum")
 grid_container = NodePath("../MainCanvasLayer/GridContainer")
 test_network = ExtResource("2_2f8rs")
+system_element_generator = NodePath("../SystemElementGenerator")
