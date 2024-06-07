@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckg8bnio24yc0"]
+
+[ext_resource type="Script" path="res://scripts/file_button.gd" id="1_wdtuw"]
+
+[node name="FileButton" type="VBoxContainer" node_paths=PackedStringArray("main_button", "main_label")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wdtuw")
+main_button = NodePath("MainButton")
+main_label = NodePath("MainLabel")
+
+[node name="MainButton" type="Button" parent="."]
+layout_mode = 2
+text = "File
+"
+
+[node name="MainLabel" type="Label" parent="."]
+layout_mode = 2

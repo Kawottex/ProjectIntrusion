@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FileDescription" load_steps=2 format=3 uid="uid://db06eqp0a0256"]
+
+[ext_resource type="Script" path="res://scripts/system_descriptions/file_description.gd" id="1_mx2bk"]
+
+[resource]
+script = ExtResource("1_mx2bk")
+file_type = 1
+file_sub_type = 0
+guid = ""
+name = "File Antivirus 1"
+element_type = 3
+description = "Description of antivirus 1"
+interaction_type = 1
+protections = Array[Resource("res://scripts/system_descriptions/element_protection_description.gd")]([])

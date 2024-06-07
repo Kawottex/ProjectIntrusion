@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NetworkElementDescription" load_steps=3 format=3 uid="uid://b6inrjsjcfyj5"]
+
+[ext_resource type="Resource" uid="uid://0ueum4eni6my" path="res://resources/test_directory_1.tres" id="1_14vhp"]
+[ext_resource type="Script" path="res://scripts/system_descriptions/network_element_description.gd" id="1_of653"]
+
+[resource]
+script = ExtResource("1_of653")
+root_directory = ExtResource("1_14vhp")
+guid = ""
+name = "Network"
+element_type = 1
+description = ""
+interaction_type = 0
+protections = Array[Resource("res://scripts/system_descriptions/element_protection_description.gd")]([])

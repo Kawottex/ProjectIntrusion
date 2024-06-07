@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FileDescription" load_steps=2 format=3 uid="uid://bqfijrff1im0s"]
+
+[ext_resource type="Script" path="res://scripts/system_descriptions/file_description.gd" id="1_6qka0"]
+
+[resource]
+script = ExtResource("1_6qka0")
+file_type = 3
+file_sub_type = 1
+guid = ""
+name = "Txt file"
+element_type = 3
+description = "Description of txt file"
+interaction_type = 0
+protections = Array[Resource("res://scripts/system_descriptions/element_protection_description.gd")]([])

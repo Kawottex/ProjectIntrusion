@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="DirectoryDescription" load_steps=4 format=3 uid="uid://dktsy7pd72oqu"]
+
+[ext_resource type="Resource" uid="uid://db06eqp0a0256" path="res://resources/test_file_1.tres" id="1_0sm6q"]
+[ext_resource type="Resource" uid="uid://bg7y054xjll0d" path="res://resources/test_file_3.tres" id="1_41lna"]
+[ext_resource type="Script" path="res://scripts/system_descriptions/directory_description.gd" id="3_xrg61"]
+
+[resource]
+script = ExtResource("3_xrg61")
+directory_content = Array[Resource("res://scripts/system_descriptions/system_element_description.gd")]([ExtResource("1_41lna"), ExtResource("1_0sm6q")])
+guid = ""
+name = "Directory 2"
+element_type = 2
+description = "Description of directory 2"
+interaction_type = 0
+protections = Array[Resource("res://scripts/system_descriptions/element_protection_description.gd")]([])

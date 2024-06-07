@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FileDescription" load_steps=2 format=3 uid="uid://bg7y054xjll0d"]
+
+[ext_resource type="Script" path="res://scripts/system_descriptions/file_description.gd" id="1_f76aa"]
+
+[resource]
+script = ExtResource("1_f76aa")
+file_type = 4
+file_sub_type = 0
+guid = ""
+name = "lezgongue.mp3"
+element_type = 3
+description = "legendraire"
+interaction_type = 0
+protections = Array[Resource("res://scripts/system_descriptions/element_protection_description.gd")]([])
