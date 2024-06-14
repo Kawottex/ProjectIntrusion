@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://v11fp1rdg5pi"]
+
+[ext_resource type="Script" path="res://scripts/network_generator.gd" id="1_0ankf"]
+
+[node name="NetworkGenerator" type="Node"]
+script = ExtResource("1_0ankf")

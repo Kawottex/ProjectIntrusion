@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="DirectoryDescription" load_steps=4 format=3 uid="uid://dktsy7pd72oqu"]
 
-[ext_resource type="Resource" uid="uid://db06eqp0a0256" path="res://resources/test_file_1.tres" id="1_0sm6q"]
-[ext_resource type="Resource" uid="uid://bg7y054xjll0d" path="res://resources/test_file_3.tres" id="1_41lna"]
-[ext_resource type="Script" path="res://scripts/system_descriptions/directory_description.gd" id="3_xrg61"]
+[ext_resource type="Resource" uid="uid://db06eqp0a0256" path="res://resources/missions/test_file_1.tres" id="1_0sm6q"]
+[ext_resource type="Resource" uid="uid://bg7y054xjll0d" path="res://resources/missions/test_file_3.tres" id="1_41lna"]
+[ext_resource type="Script" path="res://scripts/system_descriptions/directory_element_description.gd" id="3_xrg61"]
 
 [resource]
 script = ExtResource("3_xrg61")

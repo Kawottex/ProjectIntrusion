@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HackCommandDescription" load_steps=3 format=3 uid="uid://dllrbhmlj7tsp"]
+
+[ext_resource type="Texture2D" uid="uid://oogu2dqhky1q" path="res://assets/Lucid V1.2/SVG/Shadow/Cursor-6.svg" id="1_pt2so"]
+[ext_resource type="Script" path="res://scripts/hack_commands/hack_command_description.gd" id="1_tbqwp"]
+
+[resource]
+script = ExtResource("1_tbqwp")
+command_name = "Delete file"
+command_line_key = "rm"
+command_type = 1
+command_icon = ExtResource("1_pt2so")

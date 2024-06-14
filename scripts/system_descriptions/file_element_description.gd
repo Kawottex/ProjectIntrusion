@@ -1,4 +1,4 @@
-class_name FileDescription extends SystemElementDescription
+class_name FileElementDescription extends SystemElementDescription
 
 #region Enum descriptions
 enum FileType { 

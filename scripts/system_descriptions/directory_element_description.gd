@@ -1,4 +1,4 @@
-class_name DirectoryDescription extends SystemElementDescription
+class_name DirectoryElementDescription extends SystemElementDescription
 
 @export var directory_content: Array[SystemElementDescription]
 @export var is_root: bool
@@ -14,3 +14,8 @@ func _init(p_directory_content: Array[SystemElementDescription] = [], p_is_root 
 func set_content_parent():
 	for elem in directory_content:
 		elem.parent_element = self
+
+
+func remove_child(p_child: SystemElementDescription):
+	if p_child in directory_content:
+		directory_content.erase(p_child)
