@@ -1,0 +1,5 @@
+class_name DirectoryElemBehaviour extends SysElemBehaviour
+
+func execute_behaviour():
+	SystemManager.set_current_directory(sys_elem_description)
+	NetworkGenerator.generate_directory_content(sys_elem_description)

@@ -40,3 +40,14 @@ func _init(
 	protections = p_protections
 	
 	parent_element = null
+
+func get_str_description() -> String:
+	var str_desc = "[SystemElementDescription]\n"
+	str_desc += "GUID: " + guid + "\n"
+	str_desc += "Name: " + name + "\n"
+	str_desc += "Element type: " + str(element_type) + "\n"
+	str_desc += "Description: " + description + "\n"
+	str_desc += "Interaction type: " + str(interaction_type) + "\n"
+	str_desc += "Protections: TODO" + "\n"
+	str_desc += "\n"
+	return str_desc

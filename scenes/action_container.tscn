@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://0ljt48pcjgnj"]
 
-[ext_resource type="Script" path="res://scenes/action_container.gd" id="1_ft0uo"]
+[ext_resource type="Script" path="res://scripts/ui/action_container.gd" id="1_ft0uo"]
 
 [node name="ActionContainer" type="Control" node_paths=PackedStringArray("box_container")]
 layout_mode = 3

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://sxgl4pw20jg"]
+[gd_scene load_steps=4 format=3 uid="uid://sxgl4pw20jg"]
 
-[ext_resource type="Script" path="res://scenes/generate_network_btn.gd" id="1_hbjyx"]
+[ext_resource type="Script" path="res://scripts/ui/generate_network_btn.gd" id="1_hbjyx"]
 [ext_resource type="PackedScene" uid="uid://0ljt48pcjgnj" path="res://scenes/action_container.tscn" id="2_6nuwt"]
+[ext_resource type="PackedScene" uid="uid://b2cra1ff3oq7p" path="res://scenes/file_description_window.tscn" id="3_bmjce"]
 
 [node name="MainScene" type="Node2D"]
 
@@ -36,4 +37,12 @@ anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
+offset_top = -68.0
+offset_bottom = -68.0
 grow_vertical = 0
+
+[node name="FileDescriptionWindow" parent="MainCanvasLayer" instance=ExtResource("3_bmjce")]
+anchors_preset = -1
+anchor_left = 0.755
+offset_left = 0.239929
+grow_horizontal = 0

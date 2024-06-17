@@ -5,3 +5,5 @@ extends Node
 func get_grid_container() -> GridContainer:
 	return main_canvas_layer.get_node("GridContainer")
 	
+func get_file_description_window() -> FileDescriptionWindow:
+	return main_canvas_layer.get_node("FileDescriptionWindow")

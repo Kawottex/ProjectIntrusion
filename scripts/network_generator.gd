@@ -10,26 +10,18 @@ func _ready():
 
 
 func generate_elem_network(network_desc: NetworkElementDescription):
-	var click_callback: Callable = Callable(self, "generate_network_element_content")
-	SystemElementGenerator.generate_system_element(network_desc, click_callback)
+	SysElemGenerator.generate_system_element(network_desc)
 
 
 func generate_elem_directory(dir_desc: DirectoryElementDescription, is_prev_dir: bool = false):
-	var click_callback: Callable = Callable(self, "generate_directory_content")
 	dir_desc.is_prev_dir = is_prev_dir
-	SystemElementGenerator.generate_system_element(dir_desc, click_callback)
+	SysElemGenerator.generate_system_element(dir_desc)
 
 
 func generate_elem_file(file_desc: FileElementDescription):
-	var click_callback: Callable = Callable(self, "display_file_info")
-	SystemElementGenerator.generate_system_element(file_desc, click_callback)
+	SysElemGenerator.generate_system_element(file_desc)
 
 
-func generate_network_element_content(network_elem_desc: NetworkElementDescription):
-	var root_directory: DirectoryElementDescription = network_elem_desc.root_directory
-	generate_directory_content(root_directory)
-	
-	
 func generate_directory_content(dir_desc: DirectoryElementDescription):
 	clear_grid_container()
 	
@@ -44,10 +36,6 @@ func generate_directory_content(dir_desc: DirectoryElementDescription):
 			generate_elem_directory(elem_desc)
 		elif elem_desc is FileElementDescription:
 			generate_elem_file(elem_desc)
-
-
-func display_file_info(file_desc: FileElementDescription):
-	print("file desc: " + file_desc.description)
 
 
 func clear_grid_container():
