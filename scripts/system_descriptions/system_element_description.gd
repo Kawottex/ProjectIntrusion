@@ -41,13 +41,17 @@ func _init(
 	
 	parent_element = null
 
-func get_str_description() -> String:
-	var str_desc = "[SystemElementDescription]\n"
-	str_desc += "GUID: " + guid + "\n"
-	str_desc += "Name: " + name + "\n"
-	str_desc += "Element type: " + str(element_type) + "\n"
-	str_desc += "Description: " + description + "\n"
-	str_desc += "Interaction type: " + str(interaction_type) + "\n"
-	str_desc += "Protections: TODO" + "\n"
-	str_desc += "\n"
+func get_str_description(level: int = 1) -> String:
+	var level_str: String = ""
+	for i in range(level):
+		level_str += "---"
+	
+	var str_desc = level_str + "[SystemElementDescription]\n"
+	str_desc += level_str + "GUID: " + guid + "\n"
+	str_desc += level_str + "Name: " + name + "\n"
+	str_desc += level_str + "Element type: " + str(element_type) + "\n"
+	str_desc += level_str + "Description: " + description + "\n"
+	str_desc += level_str + "Interaction type: " + str(interaction_type) + "\n"
+	str_desc += level_str + "Protections: TODO" + "\n"
+	#str_desc += "\n"
 	return str_desc

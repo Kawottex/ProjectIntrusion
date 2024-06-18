@@ -21,11 +21,16 @@ func remove_child(p_child: SystemElementDescription):
 		directory_content.erase(p_child)
 
 
-func get_str_description() -> String:
-	var str_desc = super()
-	str_desc += "[DirectoryElementDescription]\n"
-	str_desc += "Is Root: " + str(is_root) + "\n"
-	str_desc += "Directory content:\n"
+func get_str_description(level: int = 1) -> String:
+	var level_str: String = ""
+	for i in range(level):
+		level_str += "---"
+
+	var str_desc = super(level)
+	#str_desc += level_str + "[DirectoryElementDescription]\n"
+	str_desc += level_str + "Is Root: " + str(is_root) + "\n"
+	str_desc += level_str + "Directory content:\n"
 	for sys_elem in directory_content:
-		str_desc += sys_elem.get_str_description()
+		str_desc += sys_elem.get_str_description(level + 1)
+		str_desc += "\n"
 	return str_desc

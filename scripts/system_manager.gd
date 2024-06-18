@@ -26,4 +26,4 @@ func set_current_directory(p_current_directory: DirectoryElementDescription):
 
 func refresh_current_directory():
 	print(current_directory.get_str_description())
-	NetworkGenerator.generate_elem_directory(current_directory)
+	NetworkGenerator.generate_directory_content(current_directory)
